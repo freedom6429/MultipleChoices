@@ -13,6 +13,8 @@
 		7A9630332797AF01004ED83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9630312797AF01004ED83E /* Main.storyboard */; };
 		7A9630352797AF03004ED83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9630342797AF03004ED83E /* Assets.xcassets */; };
 		7A9630382797AF03004ED83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9630362797AF03004ED83E /* LaunchScreen.storyboard */; };
+		7AAD22D127A2369F00A3EA8F /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 7AAD22D027A2369F00A3EA8F /* CodableCSV */; };
+		7AAD22D327A236CC00A3EA8F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD22D227A236CC00A3EA8F /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		7A9630342797AF03004ED83E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A9630372797AF03004ED83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A9630392797AF03004ED83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AAD22D227A236CC00A3EA8F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAD22D127A2369F00A3EA8F /* CodableCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 		7A96302A2797AF01004ED83E /* MultipleChoices */ = {
 			isa = PBXGroup;
 			children = (
+				7AAD22D227A236CC00A3EA8F /* Question.swift */,
 				7A96302B2797AF01004ED83E /* AppDelegate.swift */,
 				7A96302D2797AF01004ED83E /* SceneDelegate.swift */,
 				7A96302F2797AF01004ED83E /* ViewController.swift */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = MultipleChoices;
+			packageProductDependencies = (
+				7AAD22D027A2369F00A3EA8F /* CodableCSV */,
+			);
 			productName = MultipleChoices;
 			productReference = 7A9630282797AF01004ED83E /* MultipleChoices.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 7A96301F2797AF01004ED83E;
+			packageReferences = (
+				7AAD22CF27A2369F00A3EA8F /* XCRemoteSwiftPackageReference "CodableCSV" */,
+			);
 			productRefGroup = 7A9630292797AF01004ED83E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A9630302797AF01004ED83E /* ViewController.swift in Sources */,
+				7AAD22D327A236CC00A3EA8F /* Question.swift in Sources */,
 				7A96302C2797AF01004ED83E /* AppDelegate.swift in Sources */,
 				7A96302E2797AF01004ED83E /* SceneDelegate.swift in Sources */,
 			);
@@ -295,6 +307,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +319,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +336,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +348,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -360,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7AAD22CF27A2369F00A3EA8F /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dehesa/CodableCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7AAD22D027A2369F00A3EA8F /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7AAD22CF27A2369F00A3EA8F /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A9630202797AF01004ED83E /* Project object */;
 }
